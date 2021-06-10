@@ -24,12 +24,16 @@ return
 * while stack에 값 다 없어지면 끝 
 * 기준 < 새로운거 
 
+<pre>
+<code>
 	def solution(prices):
+	
 		# answer = 몇 초 후 가격이 떨어지는지 저장 [ ]
 		# for i in range 값이 i에 들어간다 
 		# range(len(prices)) => 0 1 2 3 4  
 		# i = 0 ; 5 -0 -1 = 4
 		# i = 1 ; 5 -1 -1 = 3
+		
 		answer = [len(prices) - i - 1 for i in range(len(prices))]
 		
 		# stack = prices의 인덱스를 차례로 담아두는 배열
@@ -58,3 +62,6 @@ return
 			stack.append(i)
 			
 		return answer
+
+</code>
+</pre>
