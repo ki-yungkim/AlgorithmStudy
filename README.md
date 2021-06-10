@@ -30,7 +30,6 @@ return
 		# range(len(prices)) => 0 1 2 3 4  
 		# i = 0 ; 5 -0 -1 = 4
 		# i = 1 ; 5 -1 -1 = 3
-		
 		answer = [len(prices) - i - 1 for i in range(len(prices))]
 		
 		# stack = prices의 인덱스를 차례로 담아두는 배열
