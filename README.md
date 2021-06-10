@@ -1,7 +1,7 @@
 # Algorithm_Step_1_Stack_Queue
  210609 start
 
-##210610 1번 주식 문제
+## 210610 1번 주식 문제
 prices			
 [1, 2, 3, 2, 3]	
 
