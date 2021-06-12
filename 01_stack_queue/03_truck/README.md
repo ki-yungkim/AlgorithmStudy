@@ -33,7 +33,7 @@
 
 <pre>
 <code>
-	def solution(bridge_length, weight, truck_weights):
+    def solution(bridge_length, weight, truck_weights):
     #
     #
         answer = 0
