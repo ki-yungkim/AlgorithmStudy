@@ -43,6 +43,8 @@
 <pre>
 <code>
 	def solution(progresses, speeds):
+     #
+     #
         answer = []
         stack = 0
         while progressess:

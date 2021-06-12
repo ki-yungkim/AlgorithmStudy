@@ -34,6 +34,8 @@
 <pre>
 <code>
 	def solution(bridge_length, weight, truck_weights):
+    #
+    #
         answer = 0
         position = [0] * bridge_length
         
