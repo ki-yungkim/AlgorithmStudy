@@ -1,7 +1,9 @@
-# Algorithm_Step_1_Stack_Queue
- 210609 start
+# Algorithm_Step1_Stack_Queue
+# 1번 주식 문제
+***
 
-## 210610 1번 주식 문제
+### 문제 설명 
+
 prices			
 [1, 2, 3, 2, 3]	
 
