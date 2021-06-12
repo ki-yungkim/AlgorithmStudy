@@ -42,6 +42,7 @@
 
 <pre>
 <code>
+
 	def solution(progresses, speeds):
      #
      #
