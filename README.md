@@ -5,9 +5,9 @@
 
 ## Contents
 
-* [Step_01_Stack_Queue] ()
+* [Step_01_Stack_Queue]
 
 
-* [주식] (https://github.com/ki-yungkim/AlgorithmStudy/tree/main/01_stack_queue/01_stock)
-* [기능개발] (https://github.com/ki-yungkim/AlgorithmStudy/tree/main/01_stack_queue/02_development)
-* [다리를 지나는 트럭] (https://github.com/ki-yungkim/AlgorithmStudy/tree/main/01_stack_queue/03_truck)
+* [주식](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/01_stack_queue/01_stock)
+* [기능개발](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/01_stack_queue/02_development)
+* [다리를 지나는 트럭](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/01_stack_queue/03_truck)
