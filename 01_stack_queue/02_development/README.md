@@ -43,7 +43,7 @@
 <pre>
 <code>
 
-	def solution(progresses, speeds):
+    def solution(progresses, speeds):
      #
      #
         answer = []
