@@ -43,16 +43,14 @@
 <pre>
 <code>
 	def solution(progresses, speeds):
-    answer = []
-	stack = 0
-	while progressess:
+        answer = []
+        stack = 0
+        while progressess:
 
 		while progresses[0] < 100: 
-
 			for i in range((0, len(progresses)):
 				progresses[i] + speeds[i]
-
-
+                
 		progresses.pop(0)
 		speeds.pop(0)
 		answer[stack] = answer[stack] + 1
