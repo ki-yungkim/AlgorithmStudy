@@ -44,9 +44,8 @@
 - position에서 맨 앞 요소 pop
 - 지금 트럭 + 다음 트럭 무게가 무게 제한보다 가벼우면 트럭 무게를 position에 추가   
 - 아니면 position 맨 뒤에 0 추가
-| bridge_length| weigth| truck_weigths                   | return|
-| :----------- | :-----| :-------------------------------| :-----|
-| 2            | 10    | [7, 4, 5, 6]                    | 8     |
+
+- 첫 예시일 때
 
 | position     | truck_weigths | answer|
 | :----------- |  :------------| :-----|
