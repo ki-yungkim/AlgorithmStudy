@@ -1,5 +1,5 @@
 # Algorithm_Step1_Stack_Queue
-# 1번 주식 문제
+## 1번 주식 문제
 ***
 
 ### 문제 설명 
