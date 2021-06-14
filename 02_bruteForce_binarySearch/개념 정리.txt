@@ -1,0 +1,41 @@
+2주차 완전탐색 이분탐색
+
+완전 탐색
+기본
+for i in range(len()) 쓰는 기본적인 반복문
+
+재귀함수
+
+def solution (trump, loc):
+    if trump[loc] == 8:
+        return loc
+        else:
+            return solution(trump, loc+1)
+            
+ solution이 solution을 호출
+ 쉽게 무한 루프에 빠진다 주의
+ 
+ 이분 탐색
+ left right (left + right) / 2  = mid
+ 없으면 정답 보다 작으면 left를 mid + 1
+      정답보다 크면 right를 mid - 1 
+      
+예시 코드 
+
+def solution(trump):  
+    left = 0 
+    right = len(trump) -1
+
+    while (left <= right) :
+    mid = (left + right) //2
+    if trump[mid] == 8:
+        return mid
+    elif trump[mid] < 8:
+        left = mid + 1
+    elif trump[mid] > 8:
+        rigth = mid - 1
+    return mid 
+
+ 함수 시작시 left right 인덱스 선언 
+ left가 right보다 작거나 같으면 항상 실행되도록 
+ 
