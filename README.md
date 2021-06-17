@@ -7,6 +7,7 @@
 ## Contents
 
 * [스택/큐](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/01_stack_queue)
+* [완전탐색/이분탐색](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/02_bruteForce_binarySearch)
 ***
 
 * [주식](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/01_stack_queue/01_stock)
