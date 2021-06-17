@@ -10,8 +10,10 @@
 * [완전탐색/이분탐색](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/02_bruteForce_binarySearch)
 ***
 
+[1주차]
 * [주식](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/01_stack_queue/01_stock)
 * [기능개발](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/01_stack_queue/02_development)
 * [다리를 지나는 트럭](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/01_stack_queue/03_truck)
-**
+
+[2주차]
 * [모의고사](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/02_bruteForce_binarySearch/01_mock_test)
