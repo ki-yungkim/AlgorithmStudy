@@ -50,7 +50,7 @@
 <pre>
 <code>
 
-	def solution(answers):
+def solution(answers):
     
     answer = []
     score = [0, 0, 0]
