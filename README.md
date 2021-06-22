@@ -17,3 +17,6 @@
 
 [2주차]
 * [모의고사](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/02_bruteForce_binarySearch/01_mock_test)
+
+
+
