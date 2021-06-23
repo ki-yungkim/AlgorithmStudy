@@ -1,9 +1,15 @@
 from sys import stdin
 from collections import Counter
-_ = stdin.readline()
-N = stdin.readline().split()
-_ = stdin.readline()
-M = stdin.readline().split()
 
-C = Counter(N)
-print(' '.join(f'{C[m]}' if m in C else '0' for m in M))
+a = stdin.readline()
+b = stdin.readline().split()
+c = stdin.readline()
+d = stdin.readline().split()
+
+C = Counter(b)
+
+for i in d:
+    if i in C:
+        print(f'{C[i]}', end=' ')
+    else: 
+        print('0', end=' ')
