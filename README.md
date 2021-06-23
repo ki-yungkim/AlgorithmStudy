@@ -18,6 +18,6 @@
 [2주차]
 * [모의고사](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/02_bruteForce_binarySearch/01_mock_test)
 * [소수찾기](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/02_bruteForce_binarySearch/02_find_primeNo)
-* [숫자카드2]
+* [숫자카드2](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/02_bruteForce_binarySearch/03_number_card)
 
 
