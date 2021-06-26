@@ -1,0 +1,22 @@
+#3주차 DFS, BFS  
+
+## DFS (Depth First Search, 깊이 우선 탐색)
+## BFS (Breadth First Search, 너비 우선 탐색)
+
+## DFS 
+- 갈 수 있는 끝까지 탐색
+- 아래로 쭉 
+- stack 구조 
+- 현재 방문한 노드에 연결된 노드를 방문  
+
+## BFS 
+- 시작점에서 같은 거리에 있는 노드들 우선으로 방문 
+- 옆으로 쭉 
+
+- queue 자료 구조 사용
+- 노드를 방문하면서 인접한 노드 중 방문하지 않았던 정보를 queue에 넣고 
+- 먼저 큐에 들어있는 노드부터 방문 
+
+
+#참고 사이트 
+https://cyc1am3n.github.io/2019/04/26/bfs_dfs_with_python.html
