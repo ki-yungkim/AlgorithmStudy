@@ -25,4 +25,4 @@
 [3주차]
 * [DFS, BFS](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/03_BFS_DFS/01_DFS_BFS)
 * [바이러스](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/03_BFS_DFS/02_virus)
-* [타겟 넘버] https://github.com/ki-yungkim/AlgorithmStudy/tree/main/03_BFS_DFS/03_target_number)
+* [타겟 넘버](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/03_BFS_DFS/03_target_number)
