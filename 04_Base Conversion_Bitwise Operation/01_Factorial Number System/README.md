@@ -121,8 +121,34 @@ while True:
 </pre>       
 
 
+## 시간이 안 줄어서 다른 사람이 한 것 참고 
+- pop을 쓸 필요가 없었다 
+<pre>
+<code>
+
+import math 
+import sys
+while True:
+    n = sys.stdin.readline().rstrip()  
+    length = len(n)
+      
+    result = 0
+        
+    if n == '0':
+        break
+            
+    for i in range(length):
+        result += int(n[i])* math.factorial(length - i)
+            
+    print(result)    
+   
+
+</code>
+</pre>
+
 ## 문제 출처 
 [Baekjoon Online Judge](https://www.acmicpc.net/problem/5692)
 
 
 #참고 사이트 
+https://brightnightsky77.tistory.com/313
