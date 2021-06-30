@@ -10,6 +10,8 @@
 
 * [스택/큐](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/01_stack_queue)
 * [완전탐색/이분탐색](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/02_bruteForce_binarySearch)
+* [DFS/BFS](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/03_BFS_DFS)
+* [진법변환/비트연산](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/04_Base%20Conversion_Bitwise%20Operation)
 ***
 
 [1주차]
@@ -27,3 +29,7 @@
 * [DFS, BFS](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/03_BFS_DFS/01_DFS_BFS)
 * [바이러스](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/03_BFS_DFS/02_virus)
 * [타겟 넘버](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/03_BFS_DFS/03_target_number)
+
+[4주차]
+* [팩토리얼 진법](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/04_Base%20Conversion_Bitwise%20Operation/01_Factorial%20Number%20System)
+* [진법변환](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/04_Base%20Conversion_Bitwise%20Operation/02_Base%20Conversion)
