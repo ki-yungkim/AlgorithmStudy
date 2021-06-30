@@ -33,3 +33,4 @@
 [4주차]
 * [팩토리얼 진법](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/04_Base%20Conversion_Bitwise%20Operation/01_Factorial%20Number%20System)
 * [진법변환](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/04_Base%20Conversion_Bitwise%20Operation/02_Base%20Conversion)
+* [비밀지도](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/04_Base%20Conversion_Bitwise%20Operation/03_Secret%20Map)
