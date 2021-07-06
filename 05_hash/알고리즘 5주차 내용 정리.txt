@@ -1,0 +1,63 @@
+### 알고리즘 5주차 해시
+
+## 구현 방법 
+- 딕셔너리 
+
+- hash = dic() 
+- hash = {} 
+
+-> 둘 다 가능 
+
+## 딕셔너리에 value 넣기
+   -> 데이터 수정도 같은 방식
+- hash[1] = '사과'
+- hash['해쉬'] = 2
+- hash[(2 ,3)] = [3, 4 ,5]
+- hash[5]  = dict({1 : '1' , 2 : 'b'})
+
+## 배열이나 집합은 안된다
+
+- hash [1, 2, 3] -> X
+- hash [{1, 2, 3}] -> X
+
+
+## 값 추출
+- hash.pop(1) => '사과' 추출
+- hash.pop('해쉬') => 2 추출
+
+## 값 삭제 
+- del hash[1]
+
+## 딕셔너리 루프 
+
+- hash.keys() -> key값들 리스트로 
+- hash.values() -> value값들 리스트로
+- hash.items() -> key, value 값들 튜플로
+
+for k in hash.keys();
+    print(k) 
+
+=> key 값들 출력 
+
+for k, v in hash.items();
+    print(k,v)
+  
+=> key value 값 출력 
+
+## 딕셔너리 정렬 
+
+- sorted() 
+- 딕셔너리에 sorted()를 하면 항상 list 타입이 반환된다.
+
+- 오름차순 정렬 
+- sorted(hash.keys(), key=lambda x:x)
+
+- 내림차순 정렬 
+- sorted(hash.keys(), key=lambda x:-x)
+- sorted(hash.items(), key=lambda x:-x[1])
+    -> 튜플에서는 -가 들어갈 수 없다, 
+    -> (x[0], x[1]) : key 오름차순, value 오름차순
+    -> (-x[0], x[1]) : key 내림차순, value 오름차순
+    -> (x[1], x[0])):  value 오름차순, key 오름차순
+
+
