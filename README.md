@@ -38,3 +38,5 @@
 
 [5주차]
 * [Hashing](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/05_hash/01_Hashing)
+* [완주하지 못한 선수](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/05_hash/02_marathon)
+* [전화번호 목록](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/05_hash/03_phoneNumberList)
