@@ -1,0 +1,114 @@
+### 알고리즘 7주차 동적계획법
+
+## 최단 경로 
+
+- 플로이드 와샬 알고리즘 : 모든 노드를 방문하는 최단 경로
+- 다익스트라 알고리즘 : 특정 노드에서 다른 노드까지의 최단 경로 
+
+# 플로이드 와샬 구현 방법 
+- 비용 배열과 방문 배열이 필요 
+- 비용 배열에는 int값이 가질 수 있는 최대값
+- 방문 배열에는 처음엔 false 
+- 출발지 어느 곳으로 해도 된다
+- 방문하지 않았으면서 비용이 적게 드는 노드로 이동하는 방식 
+- 기존의 값과 비교하여 새로 연결될 때의 필요비용 구하고 더 작은 비용으로 갱신
+- 노드 이동할 때마다 새로운 비용을 탐색하고 기존 비용과 비교 
+- 방문한 곳은 true 처리 
+- 모두 방문하면 종료 
+- 비용의 합 계산 
+
+## 예시
+
+# 비용 배열, 거리 배열 선언 
+values = [2**31 - 1 for in range(n)]
+visited = [False for i in range(n)]
+
+# 0번 노드를 시작점으로 설정 
+start = 0
+
+# 비용 배열, 거리배열 초기값 설정 
+values[start] = 0
+visited[start] = true
+
+# 모든 노드를 방문할 때까지 반복 
+while False in visited:
+
+    # 파라미터를 전체 탑색하면서 비용값 갱신
+    for i in costs:
+        if(visited[i[1]] == False and i[0] == start):
+            values[i[1]] == min(values[i[1]], i[2])
+        if(visited[i[0]] == False and i[1] == start):
+            values[i[0]] == min(values[i[0]], i[2])
+       
+       refer = 2**31 - 1
+       
+       # 방문하지 않은 노드 중 최소 비용 노드 위치 탐색 
+       for i in range(n):
+        if(visited[i] == False and values[i] != 0):
+            refer = min(refer, values[i])
+        answer = answer + refer 
+        
+        # 최소 비용 노드 방문 여부 체크 
+        for i in range(n):
+            if(visited[i] == False and values[i] == refer):
+                visited[i] = True
+                start = i
+                break 
+                
+                
+        
+             
+
+# 다익스트라 구현 방법 
+- 비용 배열과 방문 배열 필요
+- 비용 배열에는 int값이 가질 수 있는 최대값
+- 방문 배열에는 처음엔 false  
+- 출발지 필요 
+
+- 방문하지 않은 노드 중 최소 비용 선택 
+- 기존 비용과 새로운 비용을 더해간다 
+- 각 경로까지 최단 경로 계산 
+
+
+## 예시
+
+    # 비용 배열, 거리 배열 선언 
+    visited = [False for _ in range(n)]
+    cost = [sys.maxsize for _ in range(n)]
+    
+    # 0번 노드를 시작점으로 설정 
+    visited[0] = True 
+    cost[0] = 0
+    
+    length = len(visted)
+    
+    # 방문하지 않는 노드가 있다면 반복문 
+    while False in visited:
+    
+        # 방문하지 않은 노드 중 최소값 찾기
+        checkLoc = -1
+        checkValue = sys.maxsize 
+        
+        for i in range(length):
+            if visited[i] == False and cost[i] < checkValue:
+                checkLoc = i
+                checkValue = cost[i]
+                
+            # 검사할 후보가 없으면 break     
+            if checkLoc == -1:
+                break
+            
+            # 경로 완전 탐색으로 비용 배열 수정             
+            visited[checkLoc] = True 
+            for v1, v2, c in costs:
+                if v1 == checkLoc and visited[v2] == False:
+                    cost[v2] = min(cost[v2], cost[v1]+c)
+                if v2 == checkLoc and visited[v1] == False:
+                    cist[v1] = min(cost[v1], cost[v2]+c)
+            
+        
+    
+    
+### 내용 예시를 봐도 무슨 내용인지 이해가 잘 안 간다
+### 알고리즘 문제 풀면서 이해 해봐야 할 것 같다.
+        
