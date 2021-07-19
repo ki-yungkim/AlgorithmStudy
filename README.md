@@ -13,6 +13,8 @@
 * [DFS/BFS](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/03_BFS_DFS)
 * [진법변환/비트연산](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/04_Base%20Conversion_Bitwise%20Operation)
 * [해쉬](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/05_hash)
+* [재귀함수](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/06_Recursion)
+* [동적계획법](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/07_Dynamic%20Programming)
 ***
 
 [1주차]
@@ -40,3 +42,13 @@
 * [Hashing](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/05_hash/01_Hashing)
 * [완주하지 못한 선수](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/05_hash/02_marathon)
 * [전화번호 목록](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/05_hash/03_phoneNumberList)
+
+[6주차]
+*[이진수 변환](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/06_Recursion/01_conversion_binary)
+*[팩토리얼](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/06_Recursion/02_factorial)
+*[괄호변환](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/06_Recursion/03_bracket)
+
+[7주차]
+*[계단 오르기]
+*[정수 삼각형]
+*[N으로 표현]
