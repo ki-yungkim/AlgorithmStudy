@@ -44,11 +44,11 @@
 * [전화번호 목록](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/05_hash/03_phoneNumberList)
 
 [6주차]
-*[이진수 변환](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/06_Recursion/01_conversion_binary)
-*[팩토리얼](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/06_Recursion/02_factorial)
-*[괄호변환](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/06_Recursion/03_bracket)
+* [이진수 변환](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/06_Recursion/01_conversion_binary)
+* [팩토리얼](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/06_Recursion/02_factorial)
+* [괄호변환](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/06_Recursion/03_bracket)
 
 [7주차]
-*[계단 오르기]
-*[정수 삼각형]
-*[N으로 표현]
+* [계단 오르기]
+* [정수 삼각형]
+* [N으로 표현]
