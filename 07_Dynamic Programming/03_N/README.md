@@ -52,10 +52,27 @@
 
 ### 코드 구현
 
-- 
+- 이해가 안가서 다른 사람 풀이 참조
 <pre>
 <code>
-
+def solution(N, number):
+	
+    dp  =[set([N*int('1'*i)]) for i in range(1, 9)] 
+    
+    for i in range(8): 
+        for j in range(i):
+            for num1 in dp[j]:  
+                for num2 in dp[i-j-1]: 
+                	
+                    dp[i].add(num1 + num2)
+                    dp[i].add(num1 - num2)
+                    dp[i].add(num1 * num2)
+                    if num2 != 0:
+                        dp[i].add(num1//num2) 
+                        
+        if number in dp[i]:
+            return i+1 
+    return -1
 </code>
 </pre>
 
@@ -68,3 +85,4 @@
 
 
 #참고 사이트 
+https://cocook.tistory.com/113
