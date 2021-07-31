@@ -30,25 +30,92 @@
 
 
 #### 예시 설명  
-- 
+- 1번 노드는 2번, 4번 노드와 연결되며 각각 1, 2 시간이 걸린다 
+- 2번 노드는 3번 노드와 연결되고 3시간이 걸린다
+- 5번 노드는 2번 노드와 연결되고 2시간이 걸린다
+- 5번 노드는 3번 노드와 연결되고 1시간이 걸린다
+- 5번 노드는 4번 노드와 연결되고 2시간이 걸린다 
  
+- K는 3이므로 3시간 이하로 배달 가능한 노드를 찾아야 한다
+- 1 -> 2, 1 -> 4는 3시간 이하로 가능하다
+- 1 -> 2 -> 5 는 3시간 이하로 가능하다 
+- 배달 가능한 노드는 1, 2, 4, 5로 4개가 return 된다.
 
 ### 코드 구조 구상
-- 
+- 다른 사람이 한 것을 따라서 해보았다
+- 이해가 잘 안 가는 부분이 많아 공부 많이 해야할 것 같다
 ### 사용한 함수 
 - 
 
 ### 코드 구현
 
--- 
+-- 와샬-플로이드 방식 쓴 것을 참고하였다
 <pre>
 <code>
+import math
+def solution(N, road, K):
+    answer = 0
+    roads = [[math.inf for i in range(N)] for j in range(N)]
+    print(roads)
+    for r in road:
+        if roads[r[1] - 1][r[0]-1] > r[2]:
+            roads[r[1] - 1][r[0] -1] = r[2]
+            roads[r[0] - 1][r[1] -1] = r[2]
+    
+    for i in range(N):
+        roads[i][i] = 0
 
+    for path in range(N):
+        for i in range(N):
+            for j in range(N):
+                if roads[i][j] > roads[i][path] + roads[path][j]:
+                    roads[i][j] = roads[i][path] + roads[path][j]
+
+    for i in range(N):
+        if roads[0][i] <= K:
+            answer += 1
+    return answer
 </code>
 </pre>
 
--
+-- 다익스트라 알고리즘 코드 참고 
+<pre>
+<code>
+import math
+def solution(N, road, K):
+    answer = 0
+    visited = []
+    distance = [0] + [math.inf for i in range(1, N)]
+    roads = {i: {} for i in range(N)}
+    for r in road:
+        if r[1] - 1 in roads and r[0] - 1 in roads[r[1] - 1]:
+            if roads[r[1] - 1][r[0] - 1] > r[2]:
+                roads[r[1] - 1][r[0] - 1] = r[2]
+                roads[r[0] - 1][r[1] - 1] = r[2]
+        else:
+            roads[r[1] - 1][r[0] - 1] = r[2]
+            roads[r[0] - 1][r[1] - 1] = r[2]
 
+    for i in roads[0]:
+        distance[i] = roads[0][i]
+
+    while len(visited) != N:
+        minimum = math.inf
+        for i in range(1, N):
+            if i not in visited and distance[i] < minimum:
+                minimum = distance[i]
+                town = i
+
+        visited.append(town)
+        for i in roads[town]:
+            if distance[i] > distance[town] + roads[town][i]:
+                distance[i] = distance[town] + roads[town][i]
+
+    for d in distance:
+        if d <= K:
+            answer += 1
+
+    return answer
 </code>
 </pre>
 ## 문제 출처 
@@ -56,3 +123,4 @@
 
 
 #참고 사이트 
+https://dev-note-97.tistory.com/155
