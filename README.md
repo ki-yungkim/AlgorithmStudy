@@ -49,6 +49,6 @@
 * [괄호변환](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/06_Recursion/03_bracket)
 
 [7주차]
-* [계단 오르기]
-* [정수 삼각형]
-* [N으로 표현]
+* [계단 오르기](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/07_Dynamic%20Programming/01_stairs)
+* [정수 삼각형](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/07_Dynamic%20Programming/02_triangle)
+* [N으로 표현](https://github.com/ki-yungkim/AlgorithmStudy/tree/main/07_Dynamic%20Programming/03_N)
