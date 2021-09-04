@@ -13,6 +13,7 @@ A행 B열에서 C행 D열과의 떨어진 거리 Dist는 다음과 같은 유클
 
 Dist² = (A-C)² + (B-D)²  
 
+
 첫 줄에는 R과 C가 입력된다. (1 ≤ R ≤ 100) and (1 ≤ C ≤ 100)
 
 이후 R개의 줄에 걸쳐 문자가 C개씩 주어진다. 이 문자는 '.' (빈 공간), 'X' (사람), 'L' (좌석) 만 주어지는 것이 보장된다.
@@ -25,10 +26,15 @@ Dist² = (A-C)² + (B-D)²
 - 
 
 ### 입출력 예시 
- | n    |costs                                     |return|
- | :----|:-----------------------------------------|:-----|
- | 4    |[[0,1,1],[0,2,2],[1,2,5],[1,3,1],[2,3,8]] |4     |
+- 입력
+    - 4 4
+    - .LX.
+    - .X..
+    - ....
+    - .L..
 
+- 출력
+    - 1
 
 #### 예시 설명  
 - 
@@ -43,7 +49,52 @@ Dist² = (A-C)² + (B-D)²
 
 <pre>
 <code>
-
+    n,m = map(int,input().split())
+    graph = []
+    w_location = []
+    b_location = []
+    for i in range(m):
+        graph.append(list(map(str,input())))
+        for j in range(n):
+            if graph[i][j]=='W':
+                w_location.append([i,j])
+            else:
+                b_location.append([i,j])
+                
+    dx = [1,-1,0,0]
+    dy = [0,0,1,-1]
+     
+    def dfs(x,y,color):
+        global cnt
+        cnt+=1
+        for i in range(4):
+            xx = x+dx[i]
+            yy = y+dy[i]
+            if 0<=xx<m and 0<=yy<n and graph[xx][yy]==color and visited[xx][yy]==0:
+                visited[xx][yy] = visited[x][y]+1
+                dfs(xx,yy,color)
+               
+    # W 체크
+    visited = [[0]*n for _ in range(m)]
+    cnt_w = 0
+    for x,y in w_location:
+        cnt = 0
+        if visited[x][y]==0:
+            visited[x][y] = 1
+            dfs(x,y,'W')
+        cnt_w += cnt*cnt
+    print(cnt_w,end=' ')
+     
+    # B 체크
+    visited = [[0]*n for _ in range(m)]
+    cnt_b = 0
+    for x,y in b_location:
+        cnt = 0
+        if visited[x][y]==0:
+            visited[x][y] = 1
+            dfs(x,y,'B')
+        cnt_b += cnt*cnt
+    print(cnt_b,end=' ')
 </code>
 </pre>
 
@@ -53,4 +104,5 @@ Dist² = (A-C)² + (B-D)²
 
 
 #참고 사이트 
+(https://jiwon-coding.tistory.com/114)
 
